@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 import NotFound from './components/NotFound'
 
 const App = () => (
-  <BrowserRouter>
+  <>
     <Header />
     <Switch>
       <Route exact path="/" component={Home} />
@@ -15,7 +15,7 @@ const App = () => (
       <Route exact path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
-  </BrowserRouter>
+  </>
 )
 
 export default App
